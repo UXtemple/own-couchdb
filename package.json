@@ -1,0 +1,51 @@
+{
+  "name": "own-couchdb",
+  "description": "users for usepages",
+  "main": "cjs.js",
+  "bin": {
+    "own-couchdb": "cjs.js"
+  },
+  "scripts": {
+    "prepublish": "rollup -c rollup.config.js",
+    "test": "babel-node --plugins transform-es2015-modules-commonjs ./node_modules/.bin/tape -- __tests__/*-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UXtemple/own-couchdb.git"
+  },
+  "keywords": [
+    "users",
+    "usepages",
+    "uxtemple"
+  ],
+  "author": "Darío Javier Cravero <dario@uxtemple.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UXtemple/own-couchdb/issues"
+  },
+  "homepage": "https://github.com/UXtemple/own-couchdb#readme",
+  "dependencies": {
+    "fetch-auth-node": "^1.0.0",
+    "finalhandler": "^0.4.1",
+    "invariant": "^2.2.0",
+    "pouchdb": "^5.2.1",
+    "random-gen": "^0.1.0",
+    "router": "^1.1.4"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.5.1",
+    "babel-plugin-external-helpers": "^6.5.0",
+    "babel-plugin-transform-es2015-destructuring": "^6.5.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.5.2",
+    "babel-plugin-transform-es2015-parameters": "^6.5.0",
+    "babel-plugin-transform-export-extensions": "^6.5.0",
+    "babel-plugin-transform-object-rest-spread": "^6.5.0",
+    "kneden": "^1.0.0",
+    "proxyquire": "^1.7.4",
+    "rollup": "^0.25.4",
+    "rollup-plugin-babel": "^2.4.0",
+    "sinon": "^1.17.3",
+    "tape": "^4.5.1"
+  }
+}
