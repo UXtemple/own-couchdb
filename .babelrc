@@ -1,7 +1,7 @@
 {
   "plugins": [
     "external-helpers",
-    "kneden",
+    "transform-async-to-generator",
     "transform-es2015-destructuring",
     "transform-es2015-parameters",
     "transform-export-extensions",
