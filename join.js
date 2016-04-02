@@ -18,13 +18,13 @@ export default async function join(req, res) {
       }
 
       res.statusCode = 200;
-      res.end();
+      res.end('{}');
     } else {
       res.statusCode = 401;
-      res.end();
+      res.end('{}');
     }
   } catch(err) {
     res.statusCode = 500;
-    res.end();
+    res.end('{}');
   }
 }

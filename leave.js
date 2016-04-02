@@ -21,10 +21,10 @@ export default async function leave(req, res) {
       }
     } else {
       res.statusCode = 401;
-      res.end();
+      res.end('{}');
     }
   } catch(err) {
     res.statusCode(500);
-    res.end();
+    res.end('{}');
   }
 }

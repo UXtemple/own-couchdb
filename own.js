@@ -33,10 +33,10 @@ export default async function own(req, res) {
     } catch(err) {
       console.error('own', err, err.stack);
       res.statusCode = 500;
-      res.end();
+      res.end('{}');
     }
   } else {
     res.statusCode = 401;
-    res.end();
+    res.end('{}');
   }
 }

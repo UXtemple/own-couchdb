@@ -25,10 +25,10 @@ export default async function renewCode(req, res) {
       }
     } else {
       res.statusCode = 401;
-      res.end();
+      res.end('{}');
     }
   } else {
     res.statusCode = 404;
-    res.end();
+    res.end('{}');
   }
 }
