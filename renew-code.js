@@ -17,7 +17,7 @@ export default async function renewCode(req, res) {
         });
 
         res.statusCode = 200;
-        res.end(code);
+        res.end(JSON.stringify(code));
       } catch(err) {
         console.error(err);
         res.statusCode = 500;

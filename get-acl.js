@@ -13,7 +13,7 @@ export default async function getAcl(req, res, next) {
   } catch(err) {
     if (err.status !== NOT_FOUND) {
       res.statusCode = 401;
-      return res.end();
+      return res.end('{}');
     }
   }
 

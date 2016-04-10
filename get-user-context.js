@@ -10,6 +10,6 @@ export default async function getUserContext(req, res, next) {
   } catch(err) {
     console.error(err);
     res.statusCode = 401;
-    res.end();
+    res.end('{}');
   }
 }

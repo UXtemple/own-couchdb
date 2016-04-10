@@ -6,13 +6,13 @@ export default function getCode(req, res) {
   if (typeof acl.doc !== 'undefined') {
     if (isAdmin(userCtx) || isOwner(userCtx, acl.doc)) {
       res.statusCode = 200;
-      res.end(acl.doc.code);
+      res.end(JSON.stringify(acl.doc.code));
     } else {
       res.statusCode = 401;
-      res.end();
+      res.end('{}');
     }
   } else {
     res.statusCode = 404;
-    res.end();
+    res.end('{}');
   }
 }
